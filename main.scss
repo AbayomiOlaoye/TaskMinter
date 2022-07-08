@@ -1,0 +1,256 @@
+// Web fonts by CDN fonts:
+@import url('http://fonts.cdnfonts.com/css/roboto');
+@import url('http://fonts.cdnfonts.com/css/droid-sans-2');
+@import url('http://fonts.cdnfonts.com/css/poppins');
+@import url('http://fonts.cdnfonts.com/css/ek-mukta');
+
+// Declaration of font variables
+$roboto: ('Roboto', sans-serif);
+$droid: ('Droid Sans', sans-serif);
+$mukta: ('Ek Mukta', sans-serif);
+$poppins: ('Poppins', sans-serif);
+
+// Colour variables
+$aside: #818cf8;
+$navLinks: #052c73;
+$milk: #ebb16e;
+$bgColor: #aae2ff;
+$cardBg: #edb5b5;
+$line: #aae2ff;
+$upcomingPro: #eb6666;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5rem;
+  font-family: $roboto;
+  background-color: $bgColor;
+  width: 100%;
+  height: 100%;
+  
+  a {
+    text-decoration: none;
+    display: block;
+  }
+}
+
+/* Styling for max-width: 767px */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  // logo section
+  .logo-section {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    padding: 1rem;
+    background-color: $aside;
+
+    .logo {
+      width: 40%;
+    }
+
+    .menu {
+      width: 2rem;
+    }
+  }
+
+  // Navigation section
+
+  nav {
+    display: none;
+    position: absolute;
+    padding: 1rem;
+    width: 50%;
+    height: inherit;
+    background-color: $aside;
+    
+    a {
+      padding: 0.625rem;
+      font-family: $poppins;
+      font-size: 1rem;
+      font-weight: 600;
+      color: $navLinks;
+    }
+
+    #tasks {
+      padding: 0.5rem;
+      margin-left: 3rem;
+      color: $navLinks;
+      outline: none;
+      transition: color 250ms ease-in;
+
+        &:hover {
+        background-color: #818cf8;
+        color: #052c73;
+        font-weight: 600;
+       }
+    }
+
+    img {
+      margin-right: 1rem;
+    }
+
+    p {
+      margin: 1rem 1rem 1rem 3rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      opacity: 0.7;
+    }
+
+    .profile {
+      width: 100%;
+      display: flex;
+
+      img {
+        width: 10%;
+        height: 20%;
+        border-radius: 50%;
+        margin: 1.5rem 1rem 0;
+      }
+
+      .texts {
+        width: 100%;
+
+        p {
+          font-size: 0.85rem;
+          margin-left: 0;
+          margin-bottom: 0;
+          color: #f5f5f5;
+
+          &:nth-child(2) {
+            margin-top: 0;
+          }
+
+          &:nth-child(3) {
+            margin-top: 0;
+          }
+
+           a {
+            font-size: 0.85rem;
+            text-decoration: underline;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* Header Section */
+  header {
+    width: 100%;
+
+    .header-info {
+      text-align: center;
+      padding-top: 4rem;
+      display: flex;
+      justify-content: space-around;
+
+      .hello {
+        h1 {
+          color: $navLinks;
+        }
+
+        p {
+          opacity: 0.7;
+          font-weight: bold;
+          font-size: 1.05rem;
+        }
+      }
+    }
+  }
+
+/* Main Section */
+  main {
+    width: 100%;
+    padding: 1rem;
+    // Notification section
+    .notification {
+      width: 100%;
+      text-align: center;
+
+      .today {
+        max-width: 60%;
+        background-color: $navLinks;
+        height: 100px;
+        border-radius: 5px;
+        margin: auto;
+        padding-top: 1.5rem;
+        color: $milk;
+      }
+
+      .indicators {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 1rem;
+
+        .time {
+          display: flex;
+          margin-top: 1rem;
+          background-color: $cardBg;
+          padding-right: 1.5rem;
+          width: 100%;
+          border-radius: 5px;
+          height: 100px;
+
+          .time-index {
+            width: inherit;
+            height: inherit;
+            padding: 1.5rem;
+          }
+
+          .time-index p:first-of-type {
+            font-family: $poppins;
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+          }
+
+          .time-index p:last-of-type {
+            font-size: 1rem;
+            color: #052c73;
+            
+          }
+
+          p span {
+            display: block;
+            color: #052c73;
+            font-weight: bold;
+            
+          }
+
+          .a {
+            text-decoration: underline;
+          }
+        }
+
+        .complete,
+        .deadline {
+            width: 100%;
+            background-color: $navLinks;
+            height: 100px;
+            border-radius: 5px;
+            margin: auto;
+            padding-top: 1.5rem;
+            color: $milk;
+
+            h3 {
+              text-transform: capitalize;
+              padding-bottom: 0.5rem;
+            }
+        }
+      }
+    }
+  }
+}

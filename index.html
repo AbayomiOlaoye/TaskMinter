@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>TaskMinter</title>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-section">
+      <img src="./images/Logo.svg" alt="logo" class="logo">
+      <img src="./images/menu.svg" alt="menu icon" class="menu">
+    </div>
+    <!-- Title bar going as "aside" -->
+    <nav class="nav-bar">
+      <a href="index.html"><img src="./images/home.svg" alt="home icon">Home</a>
+      <a href="#"><img src="./images/tasks.svg" alt="task icon">My Tasks</a>
+        <select name="tasks" id="tasks">
+          <option value="progress">In-progress</option>
+          <option value="not-yet">Not-yet-started</option>
+          <option value="completed">Completed tasks</option>
+        </select>
+      <a href="#"><img src="./images/inbox.svg" alt="inbox icon">Inbox</a>
+      <a href="#"><img src="./images/appoint.svg" alt="dates icon">Appointments</a>
+      <p>Metric</p>
+      <a href="#"><img src="./images/portfolio.svg" alt="portfolio icon">Portfolio</a>
+      <a href="#"><img src="./images/goal.svg" alt="goal icon">Goals</a>
+      <hr>
+      <div class="profile">
+        <img src="./images/mindprep.jpg" alt="image oluwatoyin">
+        <div class="texts">
+          <p>Oluwatoyin Abayomi Olaoye</p>
+          <p>@MindPrepDev</p>
+          <p><a href="#" class="edit">Edit profile</a></p>
+        </div>
+      </div>
+    </nav>
+    <!-- Header section spanning through all the grid columns -->
+    <header>
+      <section class="header-info">
+        <div class="hello">
+          <h1>Hi MindPrepDev!</h1>
+          <p>Good morning! <img src="./images/dawn-icon.svg" alt="meme" class="hi-img"></p>
+        </div>
+        <div class="new-tasks">
+          Got new task today?<img src="./images/add-button.svg" alt="add more task">
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- Main reminder section -->
+      <section class="notification">
+        <div class="today">
+          <h3 class="prime">Etch-a-Sketch App</h3>
+        </div>
+        <div class="indicators">
+          <div class="time">
+            <div class="time-index">
+              <p>7:00</p>
+              <p>It's a new day!!!</p>
+            </div>
+            <p><span class="a">A</span><span class="b">M</span></p>
+          </div>
+          <div class="complete">
+            <h3>New task completed</h3>
+            <p>Sign up form <img src="./images/tick.svg" alt="correct icon"></p>
+          </div>
+          <div class="deadline">
+            <h3>admin dashboard</h3>
+            <p>Earliest deadline</p>
+          </div>
+        </div>
+      </section>
+      <!-- Recent and Upcoming tasks -->
+      <section class="upcoming">
+        <div class="next">
+          <h3><img src="./images/dash-design.svg" alt=""> Admin dashboard</h3>
+          <hr>
+          <ul>
+            <li>Design Prototyping</li>
+            <li>HTML Structuring</li>
+            <li>Styling with CSS</li>
+            <li>Implement Dynamism with JavaScript</li>
+          </ul>
+        </div>
+        <div class="next">
+          <h3><img src="./images/eminent-dash.svg" alt="project snapshot"> D'Eminent dashboard</h3>
+          <hr>
+          <ul>
+            <li>Design Prototyping</li>
+            <li>HTML Structuring</li>
+            <li>Styling with CSS</li>
+            <li>Implement Dynamism with JavaScript</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Recent works section -->
+      <section class="recent">
+        <div class="projects">
+          <h3>Project Hghlights</h3>
+          <div class="card">
+            <h3>Persona Portfolio</h3>
+            <p>Persona-Portfolio is a personal catalogue all projects completed. It was designed
+              using a template provided by Microverse.
+            </p>
+            <img src="./images/star.svg" alt="star icon">
+            <img src="./images/hide.svg" alt="hide icon">
+            <img src="./images/share.svg" alt="share icon">
+          </div>
+          <div class="card">
+            <h3>Sign Up Page</h3>
+            <p>This project was inspired and instructed by TOP as one of my attempts to flex my
+              ability to style forms in order to enhance accessibility as opposed to default form settings
+              by various browsers
+            </p>
+            <img src="./images/star.svg" alt="star icon">
+            <img src="./images/hide.svg" alt="hide icon">
+            <img src="./images/share.svg" alt="share icon">
+          </div>
+          <div class="card">
+            <h3>Course Landing Page</h3>
+            <p>A page designed for MindPrep Nigeria as part of its promotion of education
+              to further ensure accessibility.
+            </p>
+            <img src="./images/star.svg" alt="star icon">
+            <img src="./images/hide.svg" alt="hide icon">
+            <img src="./images/share.svg" alt="share icon">
+          </div>
+        </div>
+        <!-- Calendar -->
+        <table>
+          <tr>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+            <th><span>S</span></th>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+            <td>08</td>
+            <td>09</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+          <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
