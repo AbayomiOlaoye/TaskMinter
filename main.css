@@ -33,7 +33,7 @@ body a {
   justify-content: space-between;
   width: inherit;
   padding: 1rem;
-  background-color: #818cf8;
+  background-color: transparent;
 }
 .container .logo-section .logo {
   width: 40%;
@@ -127,7 +127,9 @@ body a {
 }
 .container main {
   width: 100%;
-  padding: 1rem;
+  /* Upcoming tasks section */
+  /* Recent works section*/
+  /* Calender */
 }
 .container main .notification {
   width: 100%;
@@ -197,4 +199,96 @@ body a {
 .container main .notification .indicators .deadline h3 {
   text-transform: capitalize;
   padding-bottom: 0.5rem;
+}
+.container main .upcoming {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 1rem;
+}
+.container main .upcoming .next {
+  width: 80%;
+  margin: auto;
+  padding: 0.625rem;
+  border-radius: 10px;
+}
+.container main .upcoming .next:first-of-type {
+  background: #000;
+  color: #ebb16e;
+}
+.container main .upcoming .next:last-of-type {
+  background-color: #edb5b5;
+  color: #052c73;
+}
+.container main .upcoming .next ul li {
+  list-style-type: none;
+  margin-left: 4rem;
+}
+.container main .upcoming .next ul li::before {
+  content: url(./images/before-em.svg);
+  position: relative;
+  right: 10px;
+}
+.container main .recent {
+  width: 100%;
+}
+.container main .recent .projects {
+  background-color: #052c73;
+  margin: 1rem auto;
+  padding: 1.5rem 0;
+}
+.container main .recent .projects h3 {
+  text-align: center;
+  padding: 1rem;
+  color: #aae2ff;
+  font-size: 1.25rem;
+}
+.container main .recent .projects .card {
+  width: 80%;
+  background-color: #818cf8;
+  margin: 1rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.container main .recent .projects .card a {
+  color: #052c73;
+}
+.container main .recent .projects .card a:hover {
+  color: #f5f5f5;
+  text-decoration: underline;
+}
+.container main .recent .projects .card p {
+  margin-bottom: 1rem;
+}
+.container main .recent .projects .card img {
+  padding-right: 0.25rem;
+}
+.container main table {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 3rem;
+}
+.container main table th, .container main table td {
+  border: none;
+  padding: 0.625rem;
+}
+.container main table th {
+  background-color: #052c73;
+  color: #edb5b5;
+}
+.container main table caption {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #333;
+  margin: 0.5rem 0;
+}
+.container main table .ex {
+  opacity: 0.3;
+}
+.container main table .current {
+  background-color: #333;
+  border-radius: 50%;
+  color: #f5f5f5;
 }/*# sourceMappingURL=main.css.map */

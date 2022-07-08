@@ -50,7 +50,7 @@ body {
     justify-content: space-between;
     width: inherit;
     padding: 1rem;
-    background-color: $aside;
+    background-color: transparent;
 
     .logo {
       width: 40%;
@@ -170,7 +170,6 @@ body {
 /* Main Section */
   main {
     width: 100%;
-    padding: 1rem;
     // Notification section
     .notification {
       width: 100%;
@@ -245,11 +244,124 @@ body {
             padding-top: 1.5rem;
             color: $milk;
 
-            h3 {
-              text-transform: capitalize;
-              padding-bottom: 0.5rem;
-            }
+          h3 {
+            text-transform: capitalize;
+            padding-bottom: 0.5rem;
+          }
         }
+      }
+    }
+    /* Upcoming tasks section */
+    .upcoming {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      padding-top: 1rem;
+
+      .next {
+        width: 80%;
+        margin: auto;
+        padding: 0.625rem;
+        border-radius: 10px;
+
+        &:first-of-type {
+          background: #000;
+          color: $milk;
+        }
+
+        &:last-of-type {
+          background-color: $cardBg;
+          color: $navLinks;
+        }
+
+        ul li {
+          list-style-type: none;
+          margin-left: 4rem;
+
+          &::before {
+            content: url(./images/before-em.svg);
+            position: relative;
+            right: 10px;
+          }
+        }
+      }
+    }
+
+    /* Recent works section*/
+    .recent {
+      width: 100%;
+
+      .projects {
+        background-color: $navLinks;
+        margin: 1rem auto;
+        padding: 1.5rem 0;
+        
+        h3 {
+          text-align: center;
+          padding: 1rem;
+          color: $line;
+          font-size: 1.25rem;
+        }
+
+        .card {
+          width: 80%;
+          background-color: #818cf8;
+          margin: 1rem auto;
+          border-radius: 10px;
+          padding: 1rem;
+
+          a {
+            color: $navLinks;
+
+            &:hover {
+              color: #f5f5f5;
+              text-decoration: underline;
+            }
+          }
+          p {
+            margin-bottom: 1rem;
+          }
+
+          img {
+            padding-right: 0.25rem;
+          }
+        }
+      }
+    }
+
+    /* Calender */
+    table {
+      width: 50%;
+      margin: auto;
+      padding-bottom: 3rem;
+
+      th, td {
+        border: none;
+        padding: 0.625rem;
+      }
+
+      th {
+        background-color: $navLinks;
+        color: #edb5b5;
+      }
+
+      caption {
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-align: center;
+        color: #333;
+        margin: 0.5rem 0;
+      }
+
+      .ex {
+        opacity: 0.3;
+      }
+
+      .current {
+        background-color: #333;
+        border-radius: 50%;
+        color: #f5f5f5;
       }
     }
   }
